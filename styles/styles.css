@@ -1,0 +1,184 @@
+/*
+    Students: 
+    --------
+    Aviran Amormin and Natalia Akulov class 48/5
+
+    File Name: styles.css
+
+    Description: 
+    This file defines the styling for the "About" page, including header, navigation, main content, and footer.
+    
+    Notes:
+    - Uses flexbox for layout and alignment.
+    - Provides a responsive design with a focus on readability and usability.
+    - Includes classes for navigation links and general styling elements.
+
+    Sections:
+    - Global Styles
+    - Header and Navigation
+    - Main Content
+    - Footer
+*/
+
+/* ============================= */
+/*  Global Styles              */
+/* ============================= */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dce5ed;
+    color: #175b7b;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================= */
+/*  Header and Navigation      */
+/* ============================= */
+
+/* Navigation bar container */
+nav {
+    background: #e5e4e3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* Navigation header layout */
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    /* Allow navbar elements to wrap on smaller screens */
+}
+
+/* Styling for the navigation links */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Make links wrap when there’s not enough space */
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Individual link styles */
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover effect for links */
+.links a:hover {
+    text-decoration: underline;
+    background: #f4f4f4;
+    color: #175b7b;
+}
+
+/* ============================= */
+/*  Main Content               */
+/* ============================= */
+main {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Headings within the main content */
+h1,
+h2 {
+    color: #175b7b;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+}
+
+/* Header and Footer styling */
+header,
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Footer container */
+footer {
+    font-size: 1rem;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+/* ============================= */
+/*  Utility Classes            */
+/* ============================= */
+/* Container for book details */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+/* Styling for book images */
+.book-img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Book details section */
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Book title styling */
+.book-details h2 {
+    margin: 30px 0;
+    font-size: 1.5rem;
+    color: #17427b;
+    text-align: center;
+}
+
+/* Book description styling */
+.book-details p {
+    font-size: 1.2rem;
+    color: #555;
+    width: 100%;
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.authors {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
